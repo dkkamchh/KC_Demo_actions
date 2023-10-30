@@ -17,15 +17,15 @@ jobs:
 
       - name: Display Trigger Event
         run: |
-          echo "Event name ${github_event_name}"
+          echo "Event name ${{ github_event_name }}"
 
       - name: Display Branch Name
         run: |
-          echo "Branch name ${github_ref}"
+          echo "Branch name ${{ github_ref }}"
 
       - name: List Repository Files
         run: |
-          echo "List of repository files ${github.repository}"
+          echo "List of repository files ${{ github.repository }}"
           tree
     
     
