@@ -16,14 +16,16 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Display Trigger Event
-        run: echo "Event name ${{github_event_name}}"
+        run: |
+          echo "Event name ${github_event_name}"
 
       - name: Display Branch Name
-        run: echo "Branch name ${{github_ref}}"
+        run: |
+          echo "Branch name ${github_ref}"
 
       - name: List Repository Files
         run: |
-          echo "List of repository files ${{github.repository}}"
+          echo "List of repository files ${github.repository}"
           tree
     
     
