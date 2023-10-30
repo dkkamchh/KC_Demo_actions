@@ -24,6 +24,6 @@ jobs:
       - name: List Repository Files
         run: |
           echo "List of repository files ${github.repository}"
-          find .
+          tree
     
     
